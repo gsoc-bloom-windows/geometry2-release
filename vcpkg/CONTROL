@@ -1,5 +1,0 @@
-Source: ros-dashing-tf2-sensor-msgs
-Version: 0.11.3
-Description: Small lib to transform sensor_msgs with tf.
- Most notably, PointCloud2
-Build-Depends:
