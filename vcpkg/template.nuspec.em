@@ -1,20 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-tf2-sensor-msgs</id>
-    <version>0.11.3</version>
-    <title>ros-dashing-tf2-sensor-msgs</title>
-    <authors>Vincent Rabaud</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Small lib to transform sensor_msgs with tf.
- Most notably, PointCloud2</description>
+    <description>@(Description)</description>
     <dependencies>
-			<dependency id="ros-dashing-sensor-msgs"/>
-			<dependency id="ros-dashing-tf2"/>
-			<dependency id="ros-dashing-tf2-ros"/>
-			<dependency id="ros-dashing-ros-workspace"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
