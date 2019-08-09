@@ -1,20 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-tf2-geometry-msgs</id>
-    <version>0.11.3</version>
-    <title>ros-dashing-tf2-geometry-msgs</title>
-    <authors>Tully Foote</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>tf2_geometry_msgs</description>
+    <description>@(Description)</description>
     <dependencies>
-		<dependency id="ros-dashing-geometry-msgs"/>
-		<dependency id="ros-dashing-orocos-kdl"/>
-		<dependency id="ros-dashing-tf2"/>
-		<dependency id="ros-dashing-tf2-ros"/>
-		<dependency id="ros-dashing-ros-workspace"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
